@@ -2,13 +2,13 @@ from abc import ABC, abstractmethod
 
 
 class Player(ABC):
-    def __init__(self, nickname):
+    def __init__(self, nickname) -> None:
         self.nickname = nickname
 
     @abstractmethod
-    def get_rating():
+    def get_rating() -> None:
         pass
 
     @abstractmethod
-    def player_info():
+    def player_info() -> None:
         pass
